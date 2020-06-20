@@ -1,0 +1,31 @@
+init:
+  taskName: lw
+person:
+  name: pppp
+  age: 89
+  alive: true
+  birth: 2019/06/10
+  params:
+        skt: t1
+  lists:
+     - s3
+     - s4
+  family:
+     address: "北京"
+     memberNum: 4
+
+#server:
+  #port: 8090
+#spring:
+  #profiles:
+    #active: online
+---
+server:
+  port: 8071
+spring:
+  profiles: dev
+---
+server:
+  port: 8081
+spring:
+  profiles: online
