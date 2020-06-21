@@ -1,18 +1,10 @@
-init:
-  taskName: lw
-person:
-  name: pppp
-  age: 89
-  alive: true
-  birth: 2019/06/10
-  params:
-        skt: t1
-  lists:
-     - s3
-     - s4
-  family:
-     address: "北京"
-     memberNum: 4
+spring:
+   datasource:
+     url: jdbc:postgresql://192.168.190.129:5432/postgres
+     username: postgres
+     password: newpassword
+     driver-class-name: org.postgresql.Driver
+     type: com.alibaba.druid.pool.DruidDataSource
 
 #server:
   #port: 8090
@@ -29,3 +21,21 @@ server:
   port: 8081
 spring:
   profiles: online
+
+init:
+  taskName: lw
+person:
+  name: pppp
+  age: 89
+  alive: true
+  birth: 2019/06/10
+  params:
+        skt: t1
+  lists:
+     - s3
+     - s4
+  family:
+     address: "北京"
+     memberNum: 4
+
+

@@ -1,6 +1,5 @@
 package com.upc.lw;
 
-import com.upc.lw.domain.DataSource;
 import com.upc.lw.domain.Family;
 import com.upc.lw.domain.Person;
 import org.junit.Test;
@@ -9,8 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import javax.validation.constraints.Email;
 
 /**
  * Created by liwei on 2020/6/20
@@ -22,8 +19,6 @@ public class domainTest {
     private Person person;
     @Autowired
     private Family family;
-    @Autowired
-    private DataSource dataSource;
 
     @Value("${init.taskName}")
     private String taskName;
@@ -39,11 +34,6 @@ public class domainTest {
     @Test
     public void testFamily(){
         System.out.println(family);
-    }
-
-    @Test
-    public void testDataSource(){
-        System.out.println(dataSource);
     }
 
     @Test
